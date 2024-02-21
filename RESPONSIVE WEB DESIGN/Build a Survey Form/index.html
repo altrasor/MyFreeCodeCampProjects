@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Agatha Christie: Hercule Poirot Survey</h1>
+    <p id="description">
+      Discover the world of Hercule Poirot, Agatha Christie's legendary
+      detective! We're conducting this survey to gain insights into why this
+      character has remained a timeless favorite among readers. Share your
+      thoughts on your favorite Poirot stories and help us understand the
+      enduring appeal of this brilliant detective.
+    </p>
+    <form action="" id="survey-form"> 
+      <label for="" id="name-label"> Name <input placeholder="Enter your name" type="text" name="name" id="name" required></input>
+    </label>
+      <label for="" id="email-label"> Email<input placeholder="Enter your email"  type="email" name="email" id="email" required></input>
+    </label>
+      <label for="" id="number-label"> Age (optional)<input placeholder="Enter your age"  type="number" name="number" min="13" max="120" id="number" >
+    </label>
+
+      <select id="dropdown"> Where do you know Hercule Poirot from?
+        <option value="">(select one)</option>
+        <option value="1">Books</option>
+        <option value="2">Series</option>
+        <option value="3">Movies</option>
+        <option value="4">All of the above</option>
+    </select>
+    
+    <fieldset> <legend>Who is your favorite Hercule Poirot?</legend>
+        
+        
+        <label for="david"> <input value="poirot1"  type="radio" name="poirot" id="david" class="inline"> David Suchet</label>
+        <label for="kenneth"> <input value="poirot2"  type="radio" name="poirot" id="kenneth" class="inline"> Kennth Branagh</label>
+        <label for="john"> <input value="poirot3"  type="radio" name="poirot" id="john" class="inline"> John Malkovich</label>
+       </fieldset>
+
+    <fieldset> <legend> What is your favorite Hercule Poirot mystery?</legend>
+        <input type="checkbox" value="checkbox1"> The Big Four</input>
+        <input type="checkbox" value="checkbox2"> Murder on The Orient Express</input>
+        <input type="checkbox" value="checkbox3"> The ABC Murders</input>
+        <input type="checkbox" value="checkbox4"> Death on the Nile</input>
+        <input type="checkbox" value="checkbox5"> Hercule Poirots Christmas</input>
+        <input type="checkbox" value="checkbox6"> One,Two Buckle My Shoe</input>
+        <input type="checkbox" value="checkbox7"> Five Little Pigs</input>
+        <input type="checkbox" value="checkbox7"> After the Funeral</input>
+        <input type="checkbox" value="checkbox8">The Third Girl</input>
+        <input type="checkbox" value="checkbox9"> Halloween Party</input>
+        <input type="checkbox" value="checkbox10"> Curtains: Poirots Last Case</input>
+        <input type="textarea" placeholder="Other"> Other:
+
+    </fieldset>
+</label>
+<label for="comments"> Any other comments:
+    <textarea name="comments" id="comments" cols="30" rows="3" placeholder="What I like about Poirot.." ></textarea> 
+</label>
+
+<input type="Submit" value="Submit"></input>
+
+
+    </form>
+  </body>
+</html>
